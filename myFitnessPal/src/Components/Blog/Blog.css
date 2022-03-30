@@ -60,7 +60,7 @@ cursor: pointer;
 .blog-register{
     background-image: url("https://blog.myfitnesspal.com/wp-content/plugins/newsletter-signup/src/email-background-desktop.jpg");
 height: 250px;
-    border:1px solid black;
+    
 }
 .blog-up-navbar{
     background: #f5f5f5;
@@ -76,11 +76,95 @@ margin-top: 0;
 }
 .input{
    
-    height: 50px;
-    border: 1px solid #0066EE;
+    height: 48px;
+    border: 2px solid #0066EE;
     border-radius: 5px;
     padding: 0px 10px;
     font-size: 18px;
    color: #0066EE;
-    margin-bottom: 20px;
+   width:230px;
+    
+    text-decoration:#0066EE
+}
+.input:focus{
+    outline:#0066EE;
+    text-decoration:#0066EE
+}
+.input+button{
+    background: #0066EE;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width:230px;
+    height:50px;
+    font-size: 16px;
+   padding: 6px 15px;
+    cursor: pointer;
+}
+.register-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.caraousel-trending{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    width:98%;
+}
+.caraousel-item-trending,.caraousel-item-trending>img{
+    width:190px;
+}
+.caraousel-btn-trending{
+    background: #5a96e6;
+    border: none;
+    border-radius: 60%;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    font-weight: bolder;
+}
+.caraousel-btn-trending:hover{
+    background: #0066EE;
+}
+.line-div{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    margin-left: -60px;
+}
+.line{
+    margin-top: 32px;
+    width:720px;
+    border: 1px solid #0066EE;
+    height: 0;
+    background: #0066EE;
+}
+.latest-div{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:98%;
+    text-align: left;
+    color: #333;
+}
+.latest-div>div>img{
+    width:360px;
+    height:280px;
+}
+.latest-div>div>p{
+    color: #515151;
+    font-weight: bold;
+
+}
+.latest-div>div>p:hover{
+    color: #0066EE;
+}
+.big-img{
+    width:70%;
+    
 }

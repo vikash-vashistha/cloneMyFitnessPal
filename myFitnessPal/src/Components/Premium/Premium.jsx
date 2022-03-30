@@ -160,7 +160,8 @@ function Premium() {
           <br />
           <br />
           <br />
-
+          </div>
+          
           <div className="frequently-asked-questions">
             <div className="jss90">PREMIUM</div>
             <h1>Frequently Asked Questions</h1>
@@ -220,7 +221,7 @@ function Premium() {
           </div>
         </div>
       </div>
-    </div>
+   
   );
 }
 
