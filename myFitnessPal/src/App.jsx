@@ -2,13 +2,14 @@ import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
 import { Community } from './Components/community/community'
+import {AllApps} from "./Components/allApps/AllApps"
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <div className="App">
-     <Community/>
+      <AllApps />
     </div>
   )
 }
