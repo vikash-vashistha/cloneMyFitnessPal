@@ -2,12 +2,22 @@ import React from "react";
 import "./SignIn.css";
 import { useState } from "react";
 import axios from "axios";
+import { useDispatch, useSelector } from "react-redux";
+import { isToken, userData } from "../../store/actions";
+import { Link } from "react-router-dom";
 
 function SignIn() {
+const { token, data } = useSelector((state) => ({
+  token: state.token,
+  data: state.data,
+}));
+
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
+
+ const dispatch = useDispatch();
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -17,8 +27,15 @@ function SignIn() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8080/users", formData)
-      .then((res) => console.log(res))
+      .post("http://localhost:5500/login", formData)
+      .then((res) => {
+        localStorage.setItem("token", res.data.token);
+        // console.log(res);
+        dispatch(isToken(true));
+        console.log(token);
+        console.log(res.data.user);
+        dispatch(userData(res.data.user));
+      })
       .catch((e) => console.log(e));
   };
 

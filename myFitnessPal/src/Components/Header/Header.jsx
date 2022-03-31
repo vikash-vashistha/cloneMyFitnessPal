@@ -5,6 +5,7 @@ import "./Header.css";
 
 function Header() {
   const temp = true;
+  // const temp = false;
 
   return <div>{temp ? <SignIn /> : <SignUp />}</div>;
 }

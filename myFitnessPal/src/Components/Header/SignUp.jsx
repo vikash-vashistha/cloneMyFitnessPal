@@ -1,27 +1,49 @@
 import React from "react";
 import "./SignUp.css";
 import { useState } from "react";
-import axios from "axios"
+import axios from "axios";
+import { useDispatch, useSelector } from "react-redux";
+import { isToken, userData } from "../../store/actions";
 
 function SignUp() {
+  const { token, data } = useSelector((state) => ({
+    token: state.token,
+    data: state.data,
+  }));
+
+  // console.log(token, data);
+
   const [formData, setFormData] = useState({
-    "name": "",
-    "age": "",
-    "height": "",
-    "weight": "",
-    "email": "",
-    "password": "",
-  })
+    name: "",
+    age: "",
+    height: "",
+    weight: "",
+    email: "",
+    password: "",
+  });
+
+  const dispatch = useDispatch();
 
   const handleChange = (e) => {
     const { id, value } = e.target;
-    setFormData({...formData, [id]: value})
+    setFormData({ ...formData, [id]: value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:8080/users", formData).then((res) => console.log(res)).catch((e)=> console.log(e))
-  }
+    axios
+      .post("http://localhost:5500/register", formData)
+      .then((res) => {
+        // console.log(res);
+        localStorage.setItem("token", res.data.token);
+        dispatch(isToken(true));
+        // console.log(token);
+        // console.log(res.data.user);
+        dispatch(userData(res.data.user));
+        // console.log(data);
+      })
+      .catch((e) => console.log(e));
+  };
 
   return (
     <div className="signUp">
