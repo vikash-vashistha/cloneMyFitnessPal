@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import HomeIcon from '@mui/icons-material/Home';
 import "./Blog.css"
 function Blog() {
 
@@ -56,7 +57,9 @@ function Blog() {
     <div className='blog-container'>
       <div className='blog-header'>
         <div className='blog-up-navbar'>
-          <div></div>
+          <div style={{padding:"8px"}} onClick={()=>{
+            RedirectTo('/')
+          }}><HomeIcon color="primary"  /> </div>
           <div className='navbar-img'>
             <img src="https://blog.myfitnesspal.com/wp-content/uploads/2021/03/logo-1.png" alt="first" />
           </div>

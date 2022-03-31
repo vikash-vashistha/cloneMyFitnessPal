@@ -8,8 +8,8 @@ function App() {
 
   return (
     <div className="App">
-    <Blog/>
-     {/* <Premium /> */}
+    {/* <Blog/> */}
+     <Premium />
     </div>
   )
 }

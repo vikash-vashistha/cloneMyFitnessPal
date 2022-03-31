@@ -59,12 +59,16 @@ cursor: pointer;
 }
 .blog-register{
     background-image: url("https://blog.myfitnesspal.com/wp-content/plugins/newsletter-signup/src/email-background-desktop.jpg");
+    background-size: cover;
 height: 250px;
     
 }
 .blog-up-navbar{
     background: #f5f5f5;
     padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
 }
 .blog-register-heading{
     font-size:48px;
@@ -167,4 +171,80 @@ margin-top: 0;
 .big-img{
     width:70%;
     
+}
+@media only screen and (max-width: 391px) {
+    .blog-up-navbar{
+        width: 100%;
+        justify-content: left;
+    }
+    .navbar-img>img{
+        width:70%;
+    }
+    .blog-bottom-navbar{
+        width: 100%;
+    }
+    .blog-category{
+        padding:0px 5px;
+        flex-wrap: wrap;
+   width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+    }
+    .caraousel-trending{
+        flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .blog-register{
+    margin-top: 60px;
+    height: 330px;
+    }
+    .line{
+        display: none;
+    }
+    .footer-desc{
+    width:100%;
+    }
+   
+}
+
+@media only screen and (min-device-width: 392px) and (max-width: 820px) {
+    .blog-up-navbar{
+        width: 100%;
+    }
+    .blog-bottom-navbar{
+        width: 100%;
+    }
+    .blog-category{
+        flex-wrap: wrap;
+   width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+    }
+    .blog-register-heading{
+    font-size: 40px;
+    }
+    .line{
+        width: 50%;
+    }
+    .caraousel-container-trending{
+    width: 90%;
+   
+    }
+    .caraousel-trending{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .latest-div>div>img{
+        width:300px;
+        height:250px;
+    }
+    .latest-div>div{
+        width:300px;
+    }
+
+  
+
 }

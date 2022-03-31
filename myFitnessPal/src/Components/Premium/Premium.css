@@ -6,6 +6,7 @@ body{
 }
 .Premium-container{
     background-image: url("https://www.myfitnesspal.com/react-static/78a85ff61ae51bacb70e2839935c0b84.svg");
+   
 }
 h1,h2,h3{
     color: #212121;
@@ -222,4 +223,91 @@ button,img:hover{
     background-color: #f6faff;
     cursor: pointer;
     border-radius: 50%;
+}
+
+@media only screen and (max-width: 391px) {
+    .jss78 {
+        background-image: url("https://www.myfitnesspal.com/react-static/6f2202ef334911922a195333f239bb98.png");
+    } 
+    .jss140 {
+        background: url("") top right no-repeat, url("") bottom left no-repeat;
+        padding-bottom: 0;
+    background-size: 0;
+    }
+    .Premium-container{
+        background-image: url("");
+        width: 100%;
+       
+    }
+    .subscription{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 98%;
+    }
+    .jss163 {
+    min-width: 100%;
+    margin: 0;
+    padding: 0px 0px 20px 0px;
+  
+    
+    }
+    .inner-bottom{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .yellow-heading{
+       
+        width: 100%;
+    }
+    .jss166 {
+        min-width: 100%;
+        margin: 0;
+        padding: 0px 0px 20px 0px;
+    }
+    .faq-container{
+    width:98% ;
+    }
+    .faq-container>div{
+        width: 98%;
+        min-height: auto;
+    }
+    .frequently-asked-questions{
+        width: 95%;
+        margin: 5px;
+    }
+    .caraousel-item{
+        width: 100%;
+        margin-left: 0px;
+        overflow: hidden;
+    }
+    .caraousel{
+        flex-wrap: wrap;
+    }
+    .second{
+        flex-wrap: wrap;
+    }
+    .jss79 {
+        width: 100%;
+       
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        
+    }
+    .left-div{
+        height: 320px;
+        margin-left: 5px;
+    }
+    .app-img{
+        padding: 0;
+        width: 100%;
+    }
+}
+@media only screen and (min-device-width: 392px) and (max-width: 820px) {
+    .jss78 {
+        background-image: url("https://www.myfitnesspal.com/react-static/6f2202ef334911922a195333f239bb98.png");
+        background-size: 320px 548px;
+    } 
 }
