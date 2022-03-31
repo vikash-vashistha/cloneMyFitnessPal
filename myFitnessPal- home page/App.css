@@ -1,7 +1,8 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,8 +36,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-button {
-  font-size: calc(10px + 2vmin);
 }
