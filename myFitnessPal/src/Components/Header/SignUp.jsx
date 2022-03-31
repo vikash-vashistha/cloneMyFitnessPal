@@ -34,12 +34,12 @@ function SignUp() {
     axios
       .post("http://localhost:5500/register", formData)
       .then((res) => {
-        // console.log(res);
+        console.log(res);
         localStorage.setItem("token", res.data.token);
         dispatch(isToken(true));
-        // console.log(token);
+        console.log(token);
         // console.log(res.data.user);
-        dispatch(userData(res.data.user));
+        // dispatch(userData(res.data.user));
         // console.log(data);
       })
       .catch((e) => console.log(e));

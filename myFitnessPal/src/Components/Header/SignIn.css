@@ -14,18 +14,18 @@ input {
   border-radius: 5px;
   margin: auto;
   margin-top: 40px;
-  height: 250px;
+  height: 450px;
   width: 45%;
 }
 
 h5 {
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 .myForm {
   margin: auto;
   margin-bottom: 0px;
-  padding-top: 10px;
+  padding-top: 40px;
   /* border: 1px solid red; */
   width: 60%;
 }
@@ -43,8 +43,8 @@ h5 {
   margin-top: 10px;
   font-size: 10px;
   border: transparent;
-  width: 100%;
-  height: 25px;
+  width: 93%;
+  height: 45px;
   border-radius: 2px;
   background-color: #2490fe;
   color: #ffffff;
@@ -55,8 +55,8 @@ button {
   margin-bottom: 5px;
   font-size: 10px;
   border: transparent;
-  width: 60%;
-  height: 25px;
+  width: 56%;
+  height: 45px;
   border-radius: 2px;
   background-color: #0066ee;
   color: #ffffff;
@@ -85,4 +85,5 @@ h5 {
 #email,
 #password {
   width: 90%;
+  height: 45px;
 }

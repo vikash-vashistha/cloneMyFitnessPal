@@ -27,10 +27,10 @@ const { token, data } = useSelector((state) => ({
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5500/login", formData)
+      .post("http://localhost:2345/login", formData)
       .then((res) => {
         localStorage.setItem("token", res.data.token);
-        // console.log(res);
+        console.log(res);
         dispatch(isToken(true));
         console.log(token);
         console.log(res.data.user);
@@ -39,10 +39,19 @@ const { token, data } = useSelector((state) => ({
       .catch((e) => console.log(e));
   };
 
+  const handleGoogle = () => {
+    axios
+      .get("http://localhost:2345/auth/google")
+      .then((res) => {
+        console.log(res);       
+      }).catch((e) => console.log(e));
+  }
+
+
   return (
     <>
       <div className="signIn">
-        <h5>Almost there! Create your account</h5>
+        <h5>Member Login</h5>
         <form className="myForm" onSubmit={handleSubmit}>
           <input
             className="email"
@@ -64,7 +73,7 @@ const { token, data } = useSelector((state) => ({
         </form>
         <label className="label">or</label>
         <br />
-        <button>CONTINUE WITH GOOGLE</button>
+        <button onClick={handleGoogle}>CONTINUE WITH GOOGLE</button>
       </div>
       <p>
         Not a member Yet?<span>Sign up Now!</span>
