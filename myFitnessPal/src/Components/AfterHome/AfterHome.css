@@ -1,9 +1,14 @@
 .all_divs{
- 
+ width: 100% ;
+ overflow: scroll;
 }
+.all_divs::-webkit-scrollbar {
+    display: none;
+  }
 
 .addd_1{
-    border: 1px solid red;
+    display: none;
+    /* border: 1px solid red; */
     width: 78%;
     height: 255px;
     margin: auto;
@@ -15,31 +20,33 @@
 .addd_2{
     margin: auto;
     display: flex;
-   border: 1px dotted ;
+   /* border: 1px dotted ; */
    width: 78%;
 }
 .left_bar{
-    width: 70%;
+    width: 78%;
     /* border: 2px teal; */
 }
 .right_bar{
+    /* display: none; */
     width: 30%;
     /* border: 2px green; */
 }
 .left_1st{
-    height: 240px;
+    height: 260px;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    background-color: rgb(246,246,246);
 }
 .new_feed{
-    height: 180px;
-    border: 1px solid red;
+    height: 167px;
+    /* border: 1px solid red; */
     margin-top: 20px;
     background-color:  rgb(246, 246, 246);
 }
 .add_friends{
     height: 200px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 20px;
 }
 .your_daily_summ{
@@ -68,15 +75,20 @@
     height: 184px;
 }
 .left_1_inner{
- border: 1px solid;
+ /* border: 1px solid; */
  display: flex;
+ overflow: scroll;
  padding: 10px;
 }
+.left_1_inner::-webkit-scrollbar {
+    display: none;
+  }
 .avatar{
- border: 1px solid;
+ /* border: 1px solid; */
  height: 120px;
  width: 120px;
  margin-right: 10px;
+ background-color: rgb(230,230,230);
 }
 .info_avatar{
    width: 528px;
@@ -148,14 +160,14 @@
     display: flex;
     width: 100%;
     height: 60px;
-    border: 1px solid;
+    /* border: 1px solid; */
     
 }
 .gained_11{
     display: flex;
     justify-content: space-between;
     width: 20%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 100%;
 }
 .gained_1>p{
@@ -166,18 +178,26 @@
     justify-content: center;
     align-items: center;
     width: 80%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
-.gained_22>div:nth-child(1){
+.gained_22>div:nth-child(2){
     width: 80%;
     height: 8px;
     border: 1px solid gray;
-    background-color: aliceblue;
+    background-color: rgb(246, 246, 246);
 }
-.gained_22>div:nth-child(2){
+.gained_22>div:nth-child(3){
     width: 1%;
     height: 20px;
     border-left: 4px dotted gray;
+}
+.gained_22>span{
+    color: rgb(133, 196, 0);
+}
+.opacity{
+    position: relative;
+    margin-top: 30px;
+    left: 15px;
 }
 
 .new_feed_upper{
@@ -206,4 +226,119 @@
     border-radius: 4px;
     border: none;
     color: white;
+}
+.add_friends{
+    align-items: center;
+    background-color: rgb(246, 246, 246);
+}
+.go_tomail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 30%;
+    height: 20%;
+    border: 1px solid gray;
+    
+}
+.go_tomail>span{
+    font-weight: bold;
+}
+.go_tomail:hover{
+    background-color: gray;
+}
+.recent_forum{
+    font-size: 13px;
+    text-align: left;
+    padding-left: 10px;
+    margin: 10px;
+    border: 1px transparent;
+    border-radius: 10px;
+    background-color: rgb(246, 246, 246);
+}
+.recent_forum>li{
+    color: blue;
+}
+.hellohelthy{
+    margin-top: 30px;
+    text-align: left;
+    font-size: 13px;
+    text-align: left;
+    padding-left: 10px;
+    margin: 10px;
+    border: 1px transparent;
+    border-radius: 10px;
+    background-color: rgb(246, 246, 246);
+}
+.hellohelthy>.topics{
+    font-size: 13px;
+    color:blue ;
+    font-weight: bold;
+}
+.hellohelthy>span{
+    font-size: 13px;
+    color: blue;
+}
+
+
+
+
+@media screen and  (max-width: 800px) {
+    .addd_2{
+        width: 100%;
+    }
+    .left_bar{
+        width: 100%;
+        /* border: 2px teal; */
+    }
+    .buttons{
+        overflow: hidden;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        /* width: 65%; */
+        /* height: 100%; */
+        /* border: 1px solid red; */
+    }
+    .buttonss{
+        display: flex;
+    }
+    .right_bar{
+        display: none;
+       
+    }
+}
+
+@media screen and  (max-width: 667px) {
+    .addd_2{
+        width: 100%;
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 65%;
+        height: 100%;
+        /* border: 1px solid red; */
+    }
+    .btn_1{
+        padding: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+         font-size: 10px;
+         /* margin: 20px; */
+         background-color: rgb(252, 252, 252);
+         border: 1px solid gray;
+         border-radius: 3px;
+      }
+}
+@media screen and  (max-width: 1040px) {
+    .left_bar{
+        width: 100%;
+        /* border: 2px teal; */
+    }
+    .right_bar{
+        display: none;
+       
+    }
 }
