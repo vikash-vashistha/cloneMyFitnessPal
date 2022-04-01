@@ -84,4 +84,19 @@ input{
     .side_bar{
         display: none;
     }
+    .chiled_div1{  
+        width: 100%
+    }
+}
+
+@media screen and  (max-width: 667px) {
+    .side_bar{
+        display: none;
+    }
+    .chiled_div1{  
+        width: 100%
+    }
+    .main_div{
+       margin: 10px;
+    }
 }

@@ -107,10 +107,10 @@ function BeforeAbout() {
         </h3>
         <div className="chiled_div3">
           <div>
-            {/* <img
-              src="https://www.myfitnesspal.com/assets/img-about-us.png"
+            <img
+              src="https://www.myfitnesspal.com/assets/img-about-us-2.png"
               alt=""
-            /> */}
+            />
           </div>
           <div>
             <p>
