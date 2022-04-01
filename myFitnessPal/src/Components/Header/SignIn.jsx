@@ -39,13 +39,7 @@ const { token, data } = useSelector((state) => ({
       .catch((e) => console.log(e));
   };
 
-  const handleGoogle = () => {
-    axios
-      .get("http://localhost:2345/auth/google")
-      .then((res) => {
-        console.log(res);       
-      }).catch((e) => console.log(e));
-  }
+  
 
 
   return (
@@ -73,7 +67,9 @@ const { token, data } = useSelector((state) => ({
         </form>
         <label className="label">or</label>
         <br />
-        <button onClick={handleGoogle}>CONTINUE WITH GOOGLE</button>
+        <a href="http://localhost:2345/auth/google" >
+          <button>CONTINUE WITH GOOGLE</button>
+        </a>
       </div>
       <p>
         Not a member Yet?<span>Sign up Now!</span>

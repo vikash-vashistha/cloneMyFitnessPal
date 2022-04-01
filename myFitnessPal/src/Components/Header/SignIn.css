@@ -5,6 +5,7 @@ body {
 input {
   /* border: 1px solid black; */
   margin: 0px;
+  margin-top: 10px;
 }
 
 .signIn {
@@ -13,7 +14,7 @@ input {
   /* border: 1px solid black; */
   border-radius: 5px;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 250px;
   height: 450px;
   width: 45%;
 }
@@ -86,4 +87,30 @@ h5 {
 #password {
   width: 90%;
   height: 45px;
+}
+
+@media only screen and (min-width: 376px) and (max-width: 769px) {
+  .signIn {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    background-color: #ffffff;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 200px;
+    height: 450px;
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 376px) {
+  .signIn {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    background-color: #ffffff;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 100px;
+    height: 400px;
+    width: 85%;
+  }
 }

@@ -13,7 +13,7 @@ input {
   /* border: 1px solid black; */
   border-radius: 5px;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 200px;
   margin-bottom: 40px;
   height: 750px;
   width: 45%;
@@ -86,4 +86,31 @@ h5 {
 #email,
 #password {
   width: 90%;
+}
+
+
+@media only screen and (min-width: 376px) and (max-width: 769px) {
+  .signUp {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    background-color: #ffffff;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 80px;
+    height: 750px;
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 376px) {
+  .signUp {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    background-color: #ffffff;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 40px;
+    height: 800px;
+    width: 85%;
+  }
 }

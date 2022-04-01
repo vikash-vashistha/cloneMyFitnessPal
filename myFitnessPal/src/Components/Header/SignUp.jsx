@@ -45,6 +45,21 @@ function SignUp() {
       .catch((e) => console.log(e));
   };
 
+  const handleGoogle = () => {
+    axios
+      .get("http://localhost:2345/auth/google")
+      .then((res) => {
+        console.log(res);
+        localStorage.setItem("token", res.data.token);
+        dispatch(isToken(true));
+        console.log(token);
+        // console.log(res.data.user);
+        // dispatch(userData(res.data.user));
+        // console.log(data);
+      })
+      .catch((e) => console.log(e));
+   }
+
   return (
     <div className="signUp">
       <h5>Almost there! Create your account</h5>
@@ -107,7 +122,9 @@ function SignUp() {
       </form>
       <label className="label">or</label>
       <br />
-      <button>CONTINUE WITH GOOGLE</button>
+      <a href="http://localhost:2345/auth/google">
+        <button>CONTINUE WITH GOOGLE</button>
+      </a>
       <br />
       <p>We will never post anything without your permission</p>
       <p>
