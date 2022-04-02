@@ -10,6 +10,7 @@ function BeforeAbout() {
         </h3>
         <hr />
         <div>
+          <br />
           <p>
             Losing weight isn't easy - we know. But with a membership to
             MyFitnessPal.com, you'll get the tools you need to successfully take
@@ -17,6 +18,7 @@ function BeforeAbout() {
             free, no strings attached. So put away your credit card - you'll
             never have to pay a cent.
           </p>
+          <br />
           <p>
             Study after study has confirmed the benefits of keeping track of the
             food you eat and the activity you do. It's simple - the more
@@ -26,6 +28,7 @@ function BeforeAbout() {
             recording everything you eat without the right tools can be tedious
             at best, or simply impossible at worst.
           </p>
+          <br />
           <p>
             At MyFitnessPal.com, we focus on making sure you can log your meals
             as quickly and easily as possible. Because the easier we make it for

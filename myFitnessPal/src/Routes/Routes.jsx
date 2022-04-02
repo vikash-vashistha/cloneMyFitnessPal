@@ -4,6 +4,7 @@ import { Navbar } from "../components/Navbar/Navbar";
 import { Footer } from "../components/Footer";
 import { BeforeFood } from "../Components/BeforeFood";
 import { Routes, Route } from "react-router-dom";
+import BeforeAbout from "../Components/BeforeAbout/BeforeAbout";
 // import { Payment } from "./components/Payment";
 // import { Welcome } from "./components/signup/welcome";
 // import { LooseWeight } from "./components/signup/weightgoal";
@@ -26,7 +27,8 @@ export const Routess = () => {
     <div>
       <Navbar />
       <Routes>
-        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/" element={<BeforeAbout />}></Route>
+        {/* <Route path="/" element={<HomePage />}></Route> */}
         <Route path="/food" element={<BeforeFood />}></Route>
         <Route path="/food/:name" element={<BeforeFood />}></Route>
         <Route path="/login" element={<SignIn />}></Route>
