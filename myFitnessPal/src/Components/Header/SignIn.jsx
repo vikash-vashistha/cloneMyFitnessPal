@@ -29,12 +29,13 @@ const { token, data } = useSelector((state) => ({
     axios
       .post("http://localhost:2345/login", formData)
       .then((res) => {
-        localStorage.setItem("token", res.data.token);
-        console.log(res);
+        localStorage.setItem("token", JSON.stringify(res.data.token));
+        // console.log(res);
         dispatch(isToken(true));
         console.log(token);
-        console.log(res.data.user);
+        // console.log(res.data.user);
         dispatch(userData(res.data.user));
+        console.log(data);
       })
       .catch((e) => console.log(e));
   };

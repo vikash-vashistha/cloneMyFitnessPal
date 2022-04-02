@@ -16,6 +16,7 @@ function SignUp() {
   const [formData, setFormData] = useState({
     name: "",
     age: "",
+    gender: "",
     height: "",
     weight: "",
     email: "",
@@ -32,14 +33,14 @@ function SignUp() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5500/register", formData)
+      .post("http://localhost:2345/register", formData)
       .then((res) => {
         console.log(res);
         localStorage.setItem("token", res.data.token);
         dispatch(isToken(true));
-        console.log(token);
+        // console.log(token);
         // console.log(res.data.user);
-        // dispatch(userData(res.data.user));
+        dispatch(userData(res.data.user));
         // console.log(data);
       })
       .catch((e) => console.log(e));
@@ -54,7 +55,7 @@ function SignUp() {
         dispatch(isToken(true));
         console.log(token);
         // console.log(res.data.user);
-        // dispatch(userData(res.data.user));
+        dispatch(userData(res.data.user));
         // console.log(data);
       })
       .catch((e) => console.log(e));
@@ -75,6 +76,13 @@ function SignUp() {
           className="age"
           id="age"
           placeholder="Age"
+          onChange={handleChange}
+        />
+        <br />
+        <input
+          className="gender"
+          id="gender"
+          placeholder="Gender"
           onChange={handleChange}
         />
         <br />

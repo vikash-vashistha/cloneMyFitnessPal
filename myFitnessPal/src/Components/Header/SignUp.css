@@ -15,7 +15,7 @@ input {
   margin: auto;
   margin-top: 200px;
   margin-bottom: 40px;
-  height: 750px;
+  height: 800px;
   width: 45%;
 }
 
@@ -84,6 +84,7 @@ h5 {
 #height,
 #weight,
 #email,
+#gender,
 #password {
   width: 90%;
 }
