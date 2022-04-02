@@ -3,8 +3,7 @@ import "./Premium.css";
 import Typography from "@mui/material/Typography";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import {Navbar} from "../Navbar/Navbar"
-import {Footer} from "../Footer/Footer"
+
 function Premium() {
   const [index, setIndex] = useState(0);
 
@@ -52,7 +51,7 @@ function Premium() {
   };
   return (
     <div>
-    <Navbar/>
+    
       <div className="Premium-container">
       <br/><br/>
 
@@ -221,7 +220,7 @@ function Premium() {
             </div>
           </div>
         </div><br/><br/><br/>
-        <Footer/>
+       
       </div>
    
   );
