@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import { AddFoodDairy } from "./AddFood";
 
 
-export function FoodDairy() {
+export const FoodDiary=()=> {
   let componentRef = useRef();
 
   return (

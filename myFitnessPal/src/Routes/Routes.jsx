@@ -4,6 +4,10 @@ import { Navbar } from "../components/Navbar/Navbar";
 import { Footer } from "../components/Footer";
 import { BeforeFood } from "../Components/BeforeFood";
 import { Routes, Route } from "react-router-dom";
+import Premium from "../Components/Premium/Premium";
+import {FoodDiary} from "../Components/Food/Food"
+import Blog from "../Components/Blog/Blog";
+import AfterHome  from "../Components/AfterHome/AfterHome";
 import BeforeAbout from "../Components/BeforeAbout/BeforeAbout";
 // import { Payment } from "./components/Payment";
 // import { Welcome } from "./components/signup/welcome";
@@ -23,18 +27,30 @@ import { SignUp } from "../components/Header/SignUp";
 // import { Premium } from "./components/premium/Premium";
 
 export const Routess = () => {
+
+  const token = JSON.stringify(localStorage.getItem("token"));
+  console.log(token);
   return (
     <div>
       <Navbar />
       <Routes>
-      <Route path="/" element={<HomePage />}></Route>
-      <Route path="/food" element={<BeforeFood />}></Route>
-      <Route path="/food/:name" element={<BeforeFood />}></Route>
-      <Route path="/login" element={<SignIn />}></Route>
-      <Route path="/register" element={<SignUp />}></Route>
+        <Route
+          path="/"
+          element={token === null ? <BeforeAbout /> : <AfterHome />}
+        ></Route>
+        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/login" element={<SignIn />}></Route>
+        <Route path="/register" element={<SignUp />}></Route>
+        <Route
+          path="/food"
+          element={token.length == 0 ? <BeforeFood /> : <FoodDiary />}
+        ></Route>
+        <Route path="/food/:name" element={<BeforeFood />}></Route>
+        <Route path="/blog" element={<Blog />}></Route>
+        <Route path="/premium" element={<Premium />}></Route>
       </Routes>
       <Footer />
-      </div>
-      );
+    </div>
+  );
     };
     // <Route path="/" element={<BeforeAbout />}></Route>

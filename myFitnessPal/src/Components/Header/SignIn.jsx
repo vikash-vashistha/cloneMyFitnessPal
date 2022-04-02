@@ -4,7 +4,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { isToken, userData } from "../../store/actions";
-import { Navigate } from "react-router";
+import { useParams, Navigate } from "react-router-dom";
 
 function SignIn() {
   const { token, data } = useSelector((state) => ({
@@ -36,6 +36,9 @@ function SignIn() {
         // console.log(res.data.user);
         dispatch(userData(res.data.user));
         console.log(data);
+        if (token) {
+          return <Navigate to={"http://localhost:2345/register"} />;
+        }
       })
       .catch((e) => console.log(e));
   };
@@ -72,9 +75,9 @@ function SignIn() {
       <p className="p">
         Not a member Yet?<span className="span">Sign up Now!</span>
       </p>
-      </div>
-      );
-    }
-    
-    export { SignIn };
-    // {token ? <Navigate to={`/`} /> : console.log("user not found")}
+    </div>
+  );
+}
+
+export { SignIn };
+// {token ? <Navigate to={`/`} /> : console.log("user not found")}

@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./SignUp.css";
 import { useState } from "react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { isToken, userData } from "../../store/actions";
-import { Navigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 
+localStorage.setItem("token", "");
 function SignUp() {
   const { token, data } = useSelector((state) => ({
     token: state.token,
@@ -29,6 +30,16 @@ function SignUp() {
   const handleChange = (e) => {
     const { id, value } = e.target;
     setFormData({ ...formData, [id]: value });
+  };
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    checkUser();
+  }, []);
+
+  const checkUser = () => {
+    navigate("/");
   };
 
   const handleSubmit = (e) => {
