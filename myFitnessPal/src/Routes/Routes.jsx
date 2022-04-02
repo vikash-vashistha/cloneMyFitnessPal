@@ -27,14 +27,14 @@ export const Routess = () => {
     <div>
       <Navbar />
       <Routes>
-        <Route path="/" element={<BeforeAbout />}></Route>
-        {/* <Route path="/" element={<HomePage />}></Route> */}
-        <Route path="/food" element={<BeforeFood />}></Route>
-        <Route path="/food/:name" element={<BeforeFood />}></Route>
-        <Route path="/login" element={<SignIn />}></Route>
-        <Route path="/register" element={<SignUp />}></Route>
+      <Route path="/" element={<HomePage />}></Route>
+      <Route path="/food" element={<BeforeFood />}></Route>
+      <Route path="/food/:name" element={<BeforeFood />}></Route>
+      <Route path="/login" element={<SignIn />}></Route>
+      <Route path="/register" element={<SignUp />}></Route>
       </Routes>
       <Footer />
-    </div>
-  );
-};
+      </div>
+      );
+    };
+    // <Route path="/" element={<BeforeAbout />}></Route>

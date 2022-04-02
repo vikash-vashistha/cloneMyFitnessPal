@@ -27,7 +27,7 @@ function SignIn() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://my-fitness-pal-backend.herokuapp.com/login", formData)
+      .post("http://localhost:2345/login", formData)
       .then((res) => {
         localStorage.setItem("token", JSON.stringify(res.data.token));
         // console.log(res);
