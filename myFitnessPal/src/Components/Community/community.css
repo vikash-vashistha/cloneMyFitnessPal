@@ -1,0 +1,212 @@
+
+/**header section*/
+.header-div {
+    display: block;
+    position: absolute;
+    background-color: white;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+   border: 1px solid transparent;
+   height: 50px;
+   z-index: -999px;
+   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+   position: fixed;
+   ;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1264px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 10px;
+
+}
+
+.icon-image{
+      display: block;
+    max-height: 38.6667px;
+    max-width: 200px;
+}
+
+.headerNav{
+
+width: 800px;
+
+}
+.header-nav{
+     display: flex;
+ 
+     justify-content: space-around;
+
+
+}
+
+
+/** footer section*/
+.footer {
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
+    font-size: 12px;
+    background-color:#ececec;
+    padding: 36px 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.footer p {
+    margin-top: 0;
+    margin-bottom:1.5em
+}
+
+.footer p:last-child {
+    margin-bottom:0
+}
+
+.footer .nav {
+    margin: 0 -10px 1.5em;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap:wrap;
+     list-style-type: none;
+}
+
+.footer .nav > li {
+  padding: 0 6px;
+  margin-bottom: 5px;
+}
+
+.footer .nav > li > a {
+  line-height: 1;
+  color: #0066EE;
+  text-decoration: none;
+}
+
+.footer .nav > li:last-child {
+      border-right:none;
+}
+.text-center {
+  text-align: center;
+}
+
+
+.Section-CategoryList .Panel .pageBox .pageBox {
+    --border-type: none;
+    --has-background: false;
+    --has-full-outline: false;
+    list-style: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
+    background: none 50% 50% / cover no-repeat;
+    clear: both;
+    width: 100%;
+   
+}
+.TagCloud {
+    margin: -2px;
+    padding: 0px !important;
+    
+}
+* {
+    box-sizing: inherit;
+}
+.TagCloud li.TagCloud-Item.TagCloud-Item.TagCloud-Item a {
+    width: auto;
+    display: inline-block;
+    max-width: 100%;
+    white-space: normal;
+    text-overflow: ellipsis;
+    user-select: none;
+    padding: 0px 9px;
+    color: rgb(118, 118, 118);
+    font-size: 12px;
+    line-height: 1.5;
+    background-color: rgb(255, 255, 255);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-color: rgb(221, 222, 224);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    transition: border 0.1s ease-out 0s, color 0.1s ease-out 0s, background 0.1s ease-out 0s;
+    text-decoration: none;
+}
+.Panel li a {
+    min-height: 0px;
+}
+li {
+    text-align: -webkit-match-parent;
+}
+
+
+
+ol, ul {
+    list-style: none;
+}
+
+
+
+.Frame {
+    min-height: initial;
+    flex: 1 0 auto;
+}
+
+.Frame {
+margin-top: 50px;
+    background: none;
+}
+
+.searchContent{
+ height: 300px;
+
+background-image: url("https://i.ibb.co/h1QdbBk/hero-collage-search-bottom-large-2x.png");
+background-repeat: no-repeat;
+background-size: 100%;
+}
+.search-child{
+padding-top: 80px;
+}
+
+
+.main-content{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.left-content{
+  text-align: left;
+}
+.quick-link-block{
+  border: 1px solid white;
+  width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.right-content{
+  text-align: left;
+}
+.quick-right{
+  text-align: right !important
+}
+.Number,.LatestPostTitle,.MostRecentBy,.LastCommentDate,.DiscussionCount,.MostRecent{
+  font-size: 12px;
+  color: gray;
+}
