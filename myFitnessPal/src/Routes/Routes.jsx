@@ -5,8 +5,11 @@ import { Footer } from "../components/Footer";
 import { BeforeFood } from "../Components/BeforeFood";
 import { Routes, Route } from "react-router-dom";
 import Premium from "../Components/Premium/Premium";
-import {FoodDiary} from "../Components/Food/Food"
+import { FoodDiary } from "../Components/Food/Food"
 import Blog from "../Components/Blog/Blog";
+import { AllApps } from "../Components/allApps/AllApps"
+import { Community } from "../Components/Community/Community"
+
 // import { Payment } from "./components/Payment";
 // import { Welcome } from "./components/signup/welcome";
 // import { LooseWeight } from "./components/signup/weightgoal";
@@ -26,7 +29,7 @@ import { SignUp } from "../components/Header/SignUp";
 
 export const Routess = () => {
 
-  const token="abcfsg"
+  const token = "abcfsg"
   return (
     <div>
       <Navbar />
@@ -34,9 +37,11 @@ export const Routess = () => {
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/login" element={<SignIn />}></Route>
         <Route path="/register" element={<SignUp />}></Route>
-        <Route path="/food" element={token.length==0?<BeforeFood />:<FoodDiary/>}></Route>
+        <Route path="/food" element={token.length == 0 ? <BeforeFood /> : <FoodDiary />}></Route>
         <Route path="/food/:name" element={<BeforeFood />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
+        <Route path="/AllApps" element={<AllApps />}></Route>
+        <Route path="/Community" element={<Community />}></Route>
         <Route path="/premium" element={<Premium />}></Route>
       </Routes>
       <Footer />
