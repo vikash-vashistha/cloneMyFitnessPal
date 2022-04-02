@@ -122,7 +122,7 @@ function BeforeAbout() {
                 Join today and get on the path to healthier living!
               </strong>
             </p>
-            <button className="btnn">Join Now For FREE!</button>
+            <button className="btnnn">Join Now For FREE!</button>
           </div>
         </div>
       </div>
@@ -135,11 +135,11 @@ function BeforeAbout() {
             <div style={{textAlign:"center"}}>or</div>
             <br />
             <span>Username:</span>
-            <input type="text" />
+            <input className="innput" type="text" />
             <span>Password:</span>
-            <input type="password" />
-            <input type="checkbox" className="checkme"/><span>Remember me</span>
-            <input type="button" value={"Log In"}/>
+            <input className="innput" type="password" />
+            <input  type="checkbox" className="checkme"/><span>Remember me</span>
+            <input className="innput" type="button" value={"Log In"}/>
 
           </div>
         </div>

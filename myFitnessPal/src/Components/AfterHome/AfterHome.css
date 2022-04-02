@@ -90,6 +90,10 @@
  margin-right: 10px;
  background-color: rgb(230,230,230);
 }
+.hide_all{
+    color: transparent;
+    margin-left: 10px;
+}
 .info_avatar{
    width: 528px;
    height: 120px;
