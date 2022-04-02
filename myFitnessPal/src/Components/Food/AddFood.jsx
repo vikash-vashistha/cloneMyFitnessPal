@@ -11,6 +11,7 @@ const CalederDairyImg = styled.img`
   height: 86px;
   margin-left: -650px;
   cursor: pointer;
+  margin-top:120px;
 `;
 
 const WaterConsumption = styled.img`
@@ -46,7 +47,7 @@ export function AddFoodDairy({ componentRef }) {
       
       <center>
         <div>
-          <div>
+          <div className="food-container">
           <br/>
             <CalederDairyImg src={foodDate} alt="calendar" />
           </div>
@@ -82,6 +83,7 @@ export function AddFoodDairy({ componentRef }) {
               <button className="addfood-btn">VIEW REPORT</button>
             
           </div>
+          <br/><br/>
         </div>
       </center>
     </div>

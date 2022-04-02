@@ -3,8 +3,8 @@ import "./Premium.css";
 import Typography from "@mui/material/Typography";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import {Navbar} from "../Navbar/Navbar"
+import {Footer} from "../Footer/Footer"
 function Premium() {
   const [index, setIndex] = useState(0);
 
@@ -52,8 +52,9 @@ function Premium() {
   };
   return (
     <div>
+    <Navbar/>
       <div className="Premium-container">
-        <h1>Premium</h1>
+      <br/><br/>
 
         <div className="jss78">
           <div className="jss79">
@@ -220,6 +221,7 @@ function Premium() {
             </div>
           </div>
         </div><br/><br/><br/>
+        <Footer/>
       </div>
    
   );

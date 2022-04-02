@@ -9,9 +9,9 @@ function App() {
 
   return (
     <div className="App">
-    {/* <Blog/> */}
+    <Blog/>
      {/* <Premium /> */}
-     <FoodDairy/>
+     {/* <FoodDairy/> */}
     </div>
   )
 }

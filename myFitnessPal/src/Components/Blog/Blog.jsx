@@ -54,7 +54,7 @@ function Blog() {
     setIndex(newIndex);
   };
   return (
-    <div className='blog-container'>
+    <div id="blog" className='blog-container'>
       <div className='blog-header'>
         <div className='blog-up-navbar'>
           <div style={{padding:"8px"}} onClick={()=>{

@@ -46,6 +46,11 @@ cursor: pointer;
     color: white;
     justify-content: center;
     font-size: 14px;
+   
+}
+.blog-bottom-navbar{
+    height:25px;
+    background: #0066EE;
 }
 .navbar-img{
     height:80px;
