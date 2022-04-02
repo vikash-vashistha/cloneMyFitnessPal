@@ -1,7 +1,7 @@
 body{
     margin: 0;
 }
-h1,h2,h3{
+.blog-register-heading,h2,.h3{
     color: #212121;
     font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
 }
