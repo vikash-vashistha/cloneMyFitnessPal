@@ -1,6 +1,6 @@
 import React from "react";
 import { HomePage } from "../components/Homepage";
-import { Navbar } from "../components/Navbar";
+import { Navbar } from "../components/Navbar/Navbar";
 import { Footer } from "../components/Footer";
 import { BeforeFood } from "../Components/BeforeFood";
 import { Routes, Route } from "react-router-dom";
@@ -14,7 +14,9 @@ import { Routes, Route } from "react-router-dom";
 // import { AllApps } from "./components/allApps/AllApps";
 // import { Goals } from "./components/goals/Goals";
 // import { CreateAccount } from "./components/signup/createaccountpg";
-// import { Login } from "./components/signup/loginpg";
+import { SignIn } from "../components/Header/SignIn";
+import { SignUp } from "../components/Header/SignUp";
+
 // import { CreateUsername } from "./components/signup/createusernamepg";
 
 // import { Premium } from "./components/premium/Premium";
@@ -27,6 +29,8 @@ export const Routess = () => {
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/food" element={<BeforeFood />}></Route>
         <Route path="/food/:name" element={<BeforeFood />}></Route>
+        <Route path="/login" element={<SignIn />}></Route>
+        <Route path="/register" element={<SignUp />}></Route>
       </Routes>
       <Footer />
     </div>

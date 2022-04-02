@@ -19,8 +19,6 @@ function App() {
       <Routess />
   {/*<Header />*/}
   {/*<AfterHome/>*/}
-  <AfterHome/>
-  <BeforeAbout/>
       {/*<Blog/>*/}
       {/* <Premium /> */}
       {/* <FoodDairy/> */}
