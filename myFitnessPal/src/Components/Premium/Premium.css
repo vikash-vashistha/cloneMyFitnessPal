@@ -153,13 +153,13 @@ button,img:hover{
     cursor: pointer;
 }
 .sub-para{
-    width: 50%;
+    width: 65%;
     text-align: center;
     align-items: center;
     color: #6D717A;
     justify-content: center;
     display: block;
-    padding-left: 24%;
+    padding-left: 32%;
 }
 .special-font{
     color: #6D717A;  

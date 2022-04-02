@@ -182,7 +182,7 @@ function Premium() {
           <div className="jss140">
             <div className="inner-bottom" id="offer">
               <div className="jss90">1-MONTH FREE</div>
-              <h2 className="pre-h2">Go Premium, Get Results</h2>
+              <h2 className="pre-h2">Go Premium, Get Results</h2><br/>
               <p className="sub-para">
                 Choose a MyFitnessPal Premium plan to start your 1-month free
                 trial. You will be charged after the trial has ended—cancel
