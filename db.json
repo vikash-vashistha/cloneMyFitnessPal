@@ -1,0 +1,33 @@
+{
+   "foods":[{
+       "name":"apple",
+       "calories":1234,
+        "status":"good",
+        "id":1
+   },
+   {
+       "name":"amba",
+       "calories":134,
+        "status":"good",
+        "id":2
+   },
+   {
+       "name":"kela",
+       "calories":123,
+        "status":"bad",
+        "id":3
+   },
+   {
+       "name":"mosambi",
+       "calories":34,
+        "status":"bad",
+        "id":4
+   },
+  {
+       "name":"santra",
+       "calories":1234,
+        "status":"good",
+        "id":5
+   }
+]
+}
