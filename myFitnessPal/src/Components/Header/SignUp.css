@@ -2,9 +2,10 @@ body {
   background-color: #f0f2f4;
 }
 
-input {
-  /* border: 1px solid black; */
-  margin: 0px;
+.input2{
+  border: 1px solid red;
+  width: 5%;
+  height: 10px;
 }
 
 .signUp {
@@ -15,11 +16,11 @@ input {
   margin: auto;
   margin-top: 200px;
   margin-bottom: 40px;
-  height: 800px;
+  height: 900px;
   width: 45%;
 }
 
-h5 {
+.h5 {
   padding-top: 10px;
 }
 
@@ -51,7 +52,7 @@ h5 {
   color: #ffffff;
 }
 
-button {
+.btn2 {
   margin-top: 10px;
   margin-bottom: 5px;
   font-size: 10px;
@@ -63,18 +64,18 @@ button {
   color: #ffffff;
 }
 
-p {
+.p {
   margin: auto;
   font-size: 10px;
   width: 50%;
   margin-bottom: 10px;
 }
 
-span {
+.span {
   color: #2490fe;
 }
 
-h5 {
+.h5 {
   margin: auto;
   width: 70%;
 }

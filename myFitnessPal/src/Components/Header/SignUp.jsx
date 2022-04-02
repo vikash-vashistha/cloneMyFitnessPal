@@ -63,7 +63,7 @@ function SignUp() {
 
   return (
     <div className="signUp">
-      <h5>Almost there! Create your account</h5>
+      <h5 className="h5">Almost there! Create your account</h5>
       <form className="myForm" onSubmit={handleSubmit}>
         <input
           className="name"
@@ -118,7 +118,7 @@ function SignUp() {
           Must be at least 10 characters, no spaces.
         </label>
         <br />
-        <input type={"checkbox"} />
+        <input className="input2" type={"checkbox"} />
         <label className="label2">Terms & Conditions</label>
         <br />
         <label className="label">
@@ -131,13 +131,13 @@ function SignUp() {
       <label className="label">or</label>
       <br />
       <a href="http://localhost:2345/auth/google">
-        <button>CONTINUE WITH GOOGLE</button>
+        <button className="btn2">CONTINUE WITH GOOGLE</button>
       </a>
       <br />
       <p>We will never post anything without your permission</p>
-      <p>
+      <p className="p">
         This site is protected by reCAPTCHA and the Google{" "}
-        <span>Privacy Policy</span> and <span>Terms</span> apply.
+        <span className="span">Privacy Policy</span> and <span className="span">Terms</span> apply.
       </p>
     </div>
   );

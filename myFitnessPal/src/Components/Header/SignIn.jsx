@@ -46,7 +46,7 @@ const { token, data } = useSelector((state) => ({
   return (
     <>
       <div className="signIn">
-        <h5>Member Login</h5>
+        <h5 className="h5">Member Login</h5>
         <form className="myForm" onSubmit={handleSubmit}>
           <input
             className="email"
@@ -69,11 +69,11 @@ const { token, data } = useSelector((state) => ({
         <label className="label">or</label>
         <br />
         <a href="http://localhost:2345/auth/google" >
-          <button>CONTINUE WITH GOOGLE</button>
+          <button className="btn2">CONTINUE WITH GOOGLE</button>
         </a>
       </div>
-      <p>
-        Not a member Yet?<span>Sign up Now!</span>
+      <p className="p">
+        Not a member Yet?<span className="span">Sign up Now!</span>
       </p>
     </>
   );

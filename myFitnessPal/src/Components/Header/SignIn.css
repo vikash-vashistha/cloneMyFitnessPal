@@ -19,7 +19,7 @@ input {
   width: 45%;
 }
 
-h5 {
+.h5 {
   padding-top: 30px;
 }
 
@@ -51,7 +51,7 @@ h5 {
   color: #ffffff;
 }
 
-button {
+.btn2 {
   margin-top: 10px;
   margin-bottom: 5px;
   font-size: 10px;
@@ -63,18 +63,18 @@ button {
   color: #ffffff;
 }
 
-p {
+.p {
   margin-top: 10px;
   font-size: 10px;
   width: 50%;
   margin-bottom: 10px;
 }
 
-span {
+.span {
   color: #2490fe;
 }
 
-h5 {
+.h5 {
   margin: auto;
   width: 70%;
 }
