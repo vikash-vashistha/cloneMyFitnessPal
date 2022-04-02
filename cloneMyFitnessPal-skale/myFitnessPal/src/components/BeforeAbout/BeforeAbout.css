@@ -1,0 +1,102 @@
+.main_div{
+    display: flex;
+    text-align:left;
+    margin:150px;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 10px;
+             
+}
+.chiled_div1{  
+        width: 70%
+}
+.chiled_div2{
+   
+        display: flex;
+        height: 250px;
+        background-color: #f6f6f6;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        gap: 30px;
+}
+.chiled_div3{
+   
+        display: flex;
+        height: 200px;
+        background-color: #f6f6f6;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        gap: 30px;
+}
+.main-title{
+    color: rgb(10,82,138);
+}
+.btnn{
+    background-color: rgb(11, 172, 11);
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px solid ;
+    padding: 7px;
+}
+.form{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    /* border: 1px solid gray; */
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-bottom: 10px;
+}
+.fb{
+    background-color: rgb(24,119,242);
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 7px;
+}
+.inside_div{
+    padding: 20px;
+    text-align: left;
+}
+input{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.checkme{
+    width: 12px;
+    height: 12px;
+}
+.forgotname{
+    color: rgb(24,119,242);
+}
+.forgotname:hover{
+   color: red;
+}
+.side_bar{
+  width: 30%
+}
+
+@media screen and  (max-width: 800px) {
+    .side_bar{
+        display: none;
+    }
+    .chiled_div1{  
+        width: 100%
+    }
+}
+
+@media screen and  (max-width: 667px) {
+    .side_bar{
+        display: none;
+    }
+    .chiled_div1{  
+        width: 100%
+    }
+    .main_div{
+       margin: 10px;
+    }
+}
