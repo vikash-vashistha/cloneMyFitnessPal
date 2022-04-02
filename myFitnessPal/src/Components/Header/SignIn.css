@@ -2,7 +2,7 @@ body {
   background-color: #f0f2f4;
 }
 
-input {
+.input {
   /* border: 1px solid black; */
   margin: 0px;
   margin-top: 10px;

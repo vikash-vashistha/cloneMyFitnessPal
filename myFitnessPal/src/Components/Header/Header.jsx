@@ -5,8 +5,8 @@ import "./Header.css";
 import {Profile} from "../Profile/Profile"
 
 function Header() {
-  // const temp = true;
-  const temp = false;
+  const temp = true;
+  // const temp = false;
   
   return <div>
   {temp ? <SignIn /> : <SignUp />}
