@@ -20,7 +20,7 @@ function AfterHome() {
             <div className='left_1_inner'>
                 <div className='avatar'>
                     <span className='in_avatar_text'>no photo provided</span> <br />
-                    <span className='upload_photo'><input type="file"/></span>
+                    <span className='upload_photo'><input type="file" className='hide_all'/></span>
                 </div>
                 <div className='info_avatar'>
                     <div className='upper_info_avatar'>
