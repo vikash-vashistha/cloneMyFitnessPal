@@ -96,7 +96,7 @@ function Blog() {
 
       <div className='trending-articles'>
       <div className='line-div'>
-        <h3 className="special-font">TRENDING ARTICLES</h3>
+        <h3 className="special-font h3">TRENDING ARTICLES</h3>
         <div className='line'></div>
         </div>
         <div className="caraousel-container-trending">
@@ -158,7 +158,7 @@ function Blog() {
 
       <div className='latest-articles'>
       <div className='line-div'>
-        <h3 className="special-font line2">LATEST ARTICLES</h3>
+        <h3 className="special-font line2 h3">LATEST ARTICLES</h3>
         <div className='line'></div>
         </div>
 
