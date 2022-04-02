@@ -9,14 +9,16 @@ import AfterHome from "./Components/AfterHome/AfterHome";
 import BeforeAbout from "./Components/BeforeAbout/BeforeAbout";
 import { Community } from './Components/community/community'
 import { AllApps } from "./Components/allApps/AllApps"
+import {Routess} from './Routes/Routes'
 
 
 
 function App() {
   return (
     <div className="App">
+      <Routess />
   {/*<Header />*/}
-  <AfterHome/>
+  {/*<AfterHome/>*/}
       {/*<Blog/>*/}
       {/* <Premium /> */}
       {/* <FoodDairy/> */}
