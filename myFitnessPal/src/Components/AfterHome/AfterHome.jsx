@@ -93,7 +93,7 @@ function AfterHome() {
 
         </div>
         <div className='hellohelthy'>
-            <img src="https://d34yn14tavczy0.cloudfront.net/ember-cli/fe8debda5e8d/images/widgets/ic_hellohealthy.png" alt="" />
+            <img src="https://d34yn14tavczy0.cloudfront.net/ember-cli/fe8debda5e8d/images/widgets/ic_hellohealthy.png" alt="" /><br />
             <a href="#">View All</a>
             <hr />
             <span className='topics'>7 Green Veggies You Haven't Tried, But Totally Should</span><br />
@@ -101,7 +101,7 @@ function AfterHome() {
             <a href="">Read More</a> <br />
             <span className='topics'>10 Spring Fruits and Vegetables to Eat Now</span><br />
              <span>Load your plate with these RD-approved spring fruits and vegetables.</span><br />
-             <a href="Read More"></a><br />
+             <a href="">Read More</a><br />
             <span className='topics'>Is White or Dark Meat Chicken Healthier?</span><br />
             <span>Chicken is a healthy protein and whether you opt for dark or light meat depends on your personal goals and preference.</span> <br />
             <a href="">Read More</a>
