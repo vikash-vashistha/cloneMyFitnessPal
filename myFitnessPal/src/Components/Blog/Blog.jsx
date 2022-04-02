@@ -3,8 +3,9 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import HomeIcon from '@mui/icons-material/Home';
 import "./Blog.css"
+// import { Navigate, useNavigate } from 'react-router';
 function Blog() {
-
+// const navigate=useNavigate();
   const [index, setIndex] = useState(0);
   var premiumarr = [
     {
@@ -55,10 +56,10 @@ function Blog() {
   };
   return (
     <div id="blog" className='blog-container'>
-      <div className='blog-header'>
+      {/* <div className='blog-header'>
         <div className='blog-up-navbar'>
           <div style={{padding:"8px"}} onClick={()=>{
-            RedirectTo('/')
+            // navigate("/")
           }}><HomeIcon color="primary"  /> </div>
           <div className='navbar-img'>
             <img src="https://blog.myfitnesspal.com/wp-content/uploads/2021/03/logo-1.png" alt="first" />
@@ -77,7 +78,7 @@ function Blog() {
 
           </div>
         </div>
-      </div><br/><br/><br/><br/><br/><br/>
+      </div><br/><br/><br/><br/><br/><br/> */}
 
       <div className='blog-register'>
       <h1 className='blog-register-heading'>Fitness starts with what you eat.</h1>
@@ -198,14 +199,14 @@ function Blog() {
       </div><br/><br/><br/><br/>
 
 
-      <div className='blog-footer'>
+      {/* <div className='blog-footer'>
         <img src='https://blog.myfitnesspal.com/wp-content/uploads/2021/03/logo-1.png' alt='logo-footer'></img>
         <p className="footer-name">MyFitnessPal</p>
         <p className='footer-desc'>is the leading app for tracking—and conquering—your nutrition and fitness goals. Log meals from a database of 14 million foods, track physical activity, and learn how to build healthy habits that stick. With more than 500 recipes, 150 workout routines, and a variety of expert-guided meal and workout plans, you’ll have the support you need for your entire health and fitness journey.</p>
         <p style={{fontWeight:"bolder"}} className="footer-name">MyFitnessPal Blog</p>
         <p className='privacy'>© 2022MyFitnessPal™ | Privacy Policy | Terms | </p>
       
-      </div>
+      </div> */}
     </div>
   )
 }

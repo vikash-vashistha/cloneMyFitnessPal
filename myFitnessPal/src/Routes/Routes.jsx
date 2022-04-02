@@ -4,6 +4,9 @@ import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { BeforeFood } from "../Components/BeforeFood";
 import { Routes, Route } from "react-router-dom";
+import Premium from "../Components/Premium/Premium";
+import {FoodDiary} from "../Components/Food/Food"
+import Blog from "../Components/Blog/Blog";
 // import { Payment } from "./components/Payment";
 // import { Welcome } from "./components/signup/welcome";
 // import { LooseWeight } from "./components/signup/weightgoal";
@@ -20,13 +23,17 @@ import { Routes, Route } from "react-router-dom";
 // import { Premium } from "./components/premium/Premium";
 
 export const Routess = () => {
+
+  const token="abcfsg"
   return (
     <div>
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
-        <Route path="/food" element={<BeforeFood />}></Route>
+        <Route path="/food" element={token.length==0?<BeforeFood />:<FoodDiary/>}></Route>
         <Route path="/food/:name" element={<BeforeFood />}></Route>
+        <Route path="/blog" element={<Blog />}></Route>
+        <Route path="/premium" element={<Premium />}></Route>
       </Routes>
       <Footer />
     </div>
