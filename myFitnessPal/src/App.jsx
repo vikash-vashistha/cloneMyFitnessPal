@@ -15,12 +15,11 @@ import { AllApps } from "./Components/allApps/AllApps"
 function App() {
   return (
     <div className="App">
-      <Header />
-  {/*<AfterHome/>*/}
+  {/*<Header />*/}
+  <AfterHome/>
       {/*<Blog/>*/}
       {/* <Premium /> */}
       {/* <FoodDairy/> */}
-      {/*<Header />*/}
       {/* <AllApps /> */}
   {/*<Community />*/}
     </div>

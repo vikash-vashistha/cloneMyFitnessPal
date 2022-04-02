@@ -10,8 +10,9 @@ function Header() {
   
   return <div>
   {temp ? <SignIn /> : <SignUp />}
-  <Profile />
   </div>;
 }
 
 export { Header };
+
+// <Profile />
