@@ -25,7 +25,7 @@ function AfterHome() {
                 <div className='info_avatar'>
                     <div className='upper_info_avatar'>
                         <div className='calories_view'>
-                            <span style={{fontSize:"14px", lineHeight:0, color:"gray"}}>calories remaining change</span><br />
+                            <span style={{fontSize:"14px", lineHeight:0, color:"gray"}}>calories remaining </span><br />
                             <span style={{fontSize:"45px",lineHeight:0.7, fontWeight:"bold", color:"rgb(133, 196, 0)"}}>2370</span>
                         </div>
                         <div className='buttons' id='buttonss'>

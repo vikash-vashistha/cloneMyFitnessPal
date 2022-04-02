@@ -17,6 +17,7 @@ function App() {
     <div className="App">
   {/*<Header />*/}
   <AfterHome/>
+  <BeforeAbout/>
       {/*<Blog/>*/}
       {/* <Premium /> */}
       {/* <FoodDairy/> */}
