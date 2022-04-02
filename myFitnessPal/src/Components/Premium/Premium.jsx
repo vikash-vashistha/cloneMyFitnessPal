@@ -60,7 +60,7 @@ function Premium() {
             <div className="left-div">
               <div className="jss90">PREMIUM</div>
               <Typography className="	.MuiTypography-root">
-                <h1 style={{fontWeight:"900",fontSize:"44px",marginTop:"0"}}>Start Your Free Trial Today</h1>
+                <h1 className="pre-h1" style={{fontWeight:"900",fontSize:"44px",marginTop:"0"}}>Start Your Free Trial Today</h1>
               </Typography>
               <p className="special-font">
                 Premium members are 65% more likely to reach their weight loss
@@ -113,7 +113,7 @@ function Premium() {
         <br />
 
         <div className="caraousel-container">
-          <h1 style={{ fontWeight: "700" }}>Victory Stories</h1>
+          <h1 className="pre-h1" style={{ fontWeight: "700" }}>Victory Stories</h1>
           <p className="special-font">
             Your victories are our victories and we want to share them with the
             world.
@@ -164,7 +164,7 @@ function Premium() {
           
           <div className="frequently-asked-questions">
             <div className="jss90">PREMIUM</div>
-            <h1>Frequently Asked Questions</h1>
+            <h1 className="pre-h1">Frequently Asked Questions</h1>
             <div className="faq-container">
               <div>
                 <h3>When will I get charged?</h3>
@@ -182,7 +182,7 @@ function Premium() {
           <div className="jss140">
             <div className="inner-bottom" id="offer">
               <div className="jss90">1-MONTH FREE</div>
-              <h2>Go Premium, Get Results</h2>
+              <h2 className="pre-h2">Go Premium, Get Results</h2>
               <p className="sub-para">
                 Choose a MyFitnessPal Premium plan to start your 1-month free
                 trial. You will be charged after the trial has ended—cancel
@@ -195,7 +195,7 @@ function Premium() {
                   <h3 className="yellow-heading">SAVE</h3>
                   <div>
                     <h2>ANNUAL</h2>
-                    <h1 className="cost">₹3,100.00</h1>
+                    <h1 className="cost pre-h1">₹3,100.00</h1>
                     <p>Per Year</p>
                     <p className="special-font">
                       ₹3,100.00 billed yearly after free trial ends.
@@ -207,8 +207,8 @@ function Premium() {
                 </div>
                 <div className="jss166">
                   <div>
-                    <h2>MONTHLY</h2>
-                    <h1 className="cost">₹620.00</h1>
+                    <h2  className="pre-h2">MONTHLY</h2>
+                    <h1 className="cost pre-h">₹620.00</h1>
                     <p>Per Month</p>
                     <p className="special-font">
                       ₹620.00 billed monthly after free trial ends.

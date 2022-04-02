@@ -1,14 +1,14 @@
 body{
     margin: 0;
-    /* background-image: url("https://www.myfitnesspal.com/react-static/78a85ff61ae51bacb70e2839935c0b84.svg"); */
-    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
-    line-height: 1.5;
+   
+    
 }
 .Premium-container{
     background-image: url("https://www.myfitnesspal.com/react-static/78a85ff61ae51bacb70e2839935c0b84.svg");
-   
+    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+    line-height: 1.5;
 }
-h1,h2,h3{
+.pre-h1,.pre-h2,h3{
     color: #212121;
     font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
 }
