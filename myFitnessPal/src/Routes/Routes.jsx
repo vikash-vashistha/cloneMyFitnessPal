@@ -32,6 +32,8 @@ export const Routess = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
+        <Route path="/login" element={<SignIn />}></Route>
+        <Route path="/register" element={<SignUp />}></Route>
         <Route path="/food" element={token.length==0?<BeforeFood />:<FoodDiary/>}></Route>
         <Route path="/food/:name" element={<BeforeFood />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
