@@ -1,6 +1,6 @@
 import React from "react";
 import { HomePage } from "../components/Homepage";
-import { Navbar } from "../components/Navbar";
+import { Navbar } from "../components/Navbar/Navbar";
 import { Footer } from "../components/Footer";
 import { BeforeFood } from "../Components/BeforeFood";
 import { Routes, Route } from "react-router-dom";
@@ -17,7 +17,9 @@ import Blog from "../Components/Blog/Blog";
 // import { AllApps } from "./components/allApps/AllApps";
 // import { Goals } from "./components/goals/Goals";
 // import { CreateAccount } from "./components/signup/createaccountpg";
-// import { Login } from "./components/signup/loginpg";
+import { SignIn } from "../components/Header/SignIn";
+import { SignUp } from "../components/Header/SignUp";
+
 // import { CreateUsername } from "./components/signup/createusernamepg";
 
 // import { Premium } from "./components/premium/Premium";

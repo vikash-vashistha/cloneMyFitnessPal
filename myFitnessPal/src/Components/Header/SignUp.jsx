@@ -4,6 +4,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { isToken, userData } from "../../store/actions";
+import { Navigate } from "react-router";
 
 function SignUp() {
   const { token, data } = useSelector((state) => ({
@@ -139,7 +140,8 @@ function SignUp() {
         This site is protected by reCAPTCHA and the Google{" "}
         <span className="span">Privacy Policy</span> and <span className="span">Terms</span> apply.
       </p>
-    </div>
+      {token ? <Navigate to={`/`}/> : <Navigate to={`/register`} />}
+      </div>
   );
 }
 

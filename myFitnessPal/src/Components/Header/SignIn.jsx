@@ -68,13 +68,14 @@ const { token, data } = useSelector((state) => ({
         </form>
         <label className="label">or</label>
         <br />
-        <a href="http://localhost:2345/auth/google" >
+        <a href="http://localhost:2345/auth/google">
           <button className="btn2">CONTINUE WITH GOOGLE</button>
         </a>
       </div>
       <p className="p">
         Not a member Yet?<span className="span">Sign up Now!</span>
       </p>
+      {token ? <Navigate to={`/`} /> : <Navigate to={`/register`} />}
     </>
   );
 }

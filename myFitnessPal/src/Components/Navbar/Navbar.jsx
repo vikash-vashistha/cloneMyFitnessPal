@@ -1,4 +1,4 @@
-import "./Navbar.css"
+import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
@@ -8,7 +8,7 @@ export const Navbar = () => {
            <Link id="logo" to="/"><h1 >myfitnesspal</h1>  </Link> 
          <div id="loginSignupLink">
          <Link to="/login">Log In</Link>
-         <Link to="/signup/welcome">Sign Up</Link>
+         <Link to="/register">Sign Up</Link>
             </div>
             </div>
             <div id="navbar-lower">
@@ -22,5 +22,8 @@ export const Navbar = () => {
             <Link to="/goals">GOALS</Link>
             </div>
          
+ 
+      
     </div>
-    )}
+  );
+};
