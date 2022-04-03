@@ -4,20 +4,23 @@ import { useState } from "react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { isToken, userData } from "../../store/actions";
-import { Link } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 
 function SignIn() {
-const { token, data } = useSelector((state) => ({
-  token: state.token,
-  data: state.data,
-}));
+  const navigate = useNavigate();
+
+  const { token, data } = useSelector((state) => ({
+    token: state.token,
+    data: state.data,
+  }));
 
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
 
- const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -27,7 +30,7 @@ const { token, data } = useSelector((state) => ({
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:2345/login", formData)
+      .post("https://my-fitness-pal-backend.herokuapp.com/login", formData)
       .then((res) => {
         localStorage.setItem("token", JSON.stringify(res.data.token));
         // console.log(res);
@@ -36,15 +39,16 @@ const { token, data } = useSelector((state) => ({
         // console.log(res.data.user);
         dispatch(userData(res.data.user));
         console.log(data);
+
+        if (token) {
+          navigate("/");
+        }
       })
       .catch((e) => console.log(e));
   };
 
-  
-
-
   return (
-    <>
+    <div>
       <div className="signIn">
         <h5 className="h5">Member Login</h5>
         <form className="myForm" onSubmit={handleSubmit}>
@@ -56,7 +60,7 @@ const { token, data } = useSelector((state) => ({
           />
           <br />
           <input
-            className="password"
+            className="password input"
             id="password"
             placeholder="Create a password"
             onChange={handleChange}
@@ -64,20 +68,20 @@ const { token, data } = useSelector((state) => ({
           <br />
           <a className="label">Forgot password?</a>
           <br />
-          <input type="submit" value="LOG IN" className="btn" />
+          <input type="submit" value="LOG IN" className="btn input" />
         </form>
         <label className="label">or</label>
         <br />
-        <a href="http://localhost:2345/auth/google">
+        <a href="https://my-fitness-pal-backend.herokuapp.com/auth/google">
           <button className="btn2">CONTINUE WITH GOOGLE</button>
         </a>
       </div>
       <p className="p">
         Not a member Yet?<span className="span">Sign up Now!</span>
       </p>
-      {token ? <Navigate to={`/`} /> : <Navigate to={`/register`} />}
-    </>
+    </div>
   );
 }
 
 export { SignIn };
+// {token ? <Navigate to={`/`} /> : console.log("user not found")}

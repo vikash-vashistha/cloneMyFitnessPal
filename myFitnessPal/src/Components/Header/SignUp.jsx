@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./SignUp.css";
 import { useState } from "react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { isToken, userData } from "../../store/actions";
-import { Navigate } from "react-router";
+import { useParams, Navigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 
+localStorage.setItem("token", "");
 function SignUp() {
+  const navigate = useNavigate();
+
   const { token, data } = useSelector((state) => ({
     token: state.token,
     data: state.data,
@@ -34,7 +38,7 @@ function SignUp() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:2345/register", formData)
+      .post("https://my-fitness-pal-backend.herokuapp.com/register", formData)
       .then((res) => {
         console.log(res);
         localStorage.setItem("token", res.data.token);
@@ -43,24 +47,31 @@ function SignUp() {
         // console.log(res.data.user);
         dispatch(userData(res.data.user));
         // console.log(data);
+        if (token) {
+          navigate("/");
+        }
       })
       .catch((e) => console.log(e));
   };
 
-  const handleGoogle = () => {
-    axios
-      .get("http://localhost:2345/auth/google")
-      .then((res) => {
-        console.log(res);
-        localStorage.setItem("token", res.data.token);
-        dispatch(isToken(true));
-        console.log(token);
-        // console.log(res.data.user);
-        dispatch(userData(res.data.user));
-        // console.log(data);
-      })
-      .catch((e) => console.log(e));
-   }
+  // const handleGoogle = () => {
+  //   axios
+  //     .get("http://localhost:2345/auth/google")
+  //     .then((res) => {
+  //       console.log(res);
+  //       localStorage.setItem("token", res.data.token);
+  //       dispatch(isToken(true));
+  //       console.log(token);
+  //       // console.log(res.data.user);
+  //       dispatch(userData(res.data.user));
+  //       // console.log(data);
+  //     })
+  //     .catch((e) => console.log(e));
+  //  }
+
+  if (token !== null) {
+    return <Navigate to={"/"} />;
+  }
 
   return (
     <div className="signUp">
@@ -131,17 +142,17 @@ function SignUp() {
       </form>
       <label className="label">or</label>
       <br />
-      <a href="http://localhost:2345/auth/google">
+      <a href="https://my-fitness-pal-backend.herokuapp.com/auth/google">
         <button className="btn2">CONTINUE WITH GOOGLE</button>
       </a>
       <br />
       <p>We will never post anything without your permission</p>
       <p className="p">
         This site is protected by reCAPTCHA and the Google{" "}
-        <span className="span">Privacy Policy</span> and <span className="span">Terms</span> apply.
+        <span className="span">Privacy Policy</span> and{" "}
+        <span className="span">Terms</span> apply.
       </p>
-      {token ? <Navigate to={`/`}/> : <Navigate to={`/register`} />}
-      </div>
+    </div>
   );
 }
 

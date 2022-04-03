@@ -11,13 +11,13 @@ function Profile() {
   let user = JSON.parse(localStorage.getItem("user"));
   return (
     <div className="component">
-      <h1>{`${data.email} profile`}</h1>
+      <h2 className="color heading">{`${data.email} profile`}</h2>
       <div className="profile">
         <img src="https://picsum.photos/200" />
         <div>
-          <h3>{data.email}</h3>
-          <p>{`${data.age} years old`}</p>
-          <p>{data.gender}</p>
+          <h3 className="color">{data.email}</h3>
+          <p className="color">{`${data.age} years old`}</p>
+          <p className="color">{data.gender}</p>
           <button className="btnn">Edit Profile</button>
           <button className="btnn">Edit Photos</button>
         </div>

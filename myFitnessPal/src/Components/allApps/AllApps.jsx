@@ -9,7 +9,7 @@ export const AllApps = () => {
   const [filtApps, setFultApps] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/allapps")
+    fetch("http://localhost:8080/allapps")
       .then((data) => data.json())
       .then((d) => {
         setApps(d);
