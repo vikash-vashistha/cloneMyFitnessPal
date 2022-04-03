@@ -42,9 +42,7 @@ export const Routess = () => {
         <Route path="/login" element={<SignIn />}></Route>
         <Route path="/register" element={<SignUp />}></Route>
         <Route path="/profile" element={<Profile />}></Route>
-        <Route
-          path="/food"
-          element={token.length == 0 ? <BeforeFood /> : <FoodDiary />}
+        <Route path="/food" element={token.length == 0 ? <BeforeFood /> : <FoodDiary />}
         ></Route>
         <Route path="/food/:name" element={<BeforeFood />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
