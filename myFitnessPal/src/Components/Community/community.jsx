@@ -5,7 +5,7 @@ import NotificationsRoundedIcon from '@material-ui/icons/NotificationsRounded';
 export const Community = () => {
     return (
         <div>
-            <div className="header-div">
+            {/* <div className="header-div">
                 <div className="header">
                     <img
                         className="icon-image"
@@ -29,7 +29,7 @@ export const Community = () => {
                         <AccountCircleRoundedIcon fontSize="medium" />
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="Frame">
                 <div className="searchContent">
                     <div className="search-child">
@@ -2187,7 +2187,7 @@ export const Community = () => {
                 </div>
             </div>
 
-            <div className="footer">
+            {/* <div className="footer">
                 <div className="container"></div>
                 <ul className="nav">
                     <li>
@@ -2234,7 +2234,7 @@ export const Community = () => {
                     </li>
                 </ul>
                 <p className="text-center">© 2021 MyFitnessPal, Inc.</p>
-            </div>
+            </div> */}
         </div>
     );
 };

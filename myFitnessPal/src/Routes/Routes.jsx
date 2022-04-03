@@ -48,6 +48,8 @@ export const Routess = () => {
         ></Route>
         <Route path="/food/:name" element={<BeforeFood />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
+        <Route path="/AllApps" element={<AllApps />}></Route>
+        <Route path="/Community" element={<Community />}></Route>
         <Route path="/premium" element={<Premium />}></Route>
       </Routes>
       <Footer />
