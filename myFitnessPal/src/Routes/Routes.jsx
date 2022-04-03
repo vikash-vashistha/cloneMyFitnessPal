@@ -24,6 +24,7 @@ import { SignUp } from "../components/Header/SignUp";
 import { Profile } from "../components/Profile/Profile";
 import { useRef } from "react";
 
+import  {AllApps} from "../Components/allApps/AllApps"
 // import { CreateUsername } from "./components/signup/createusernamepg";
 
 // import { Premium } from "./components/premium/Premium";
