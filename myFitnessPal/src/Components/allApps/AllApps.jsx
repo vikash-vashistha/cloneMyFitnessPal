@@ -9,7 +9,11 @@ export const AllApps = () => {
   const [filtApps, setFultApps] = useState([]);
 
   useEffect(() => {
+<<<<<<< Updated upstream
     fetch("http://localhost:8000/allapps")
+=======
+    fetch("https://my-fitness-pal-backend.herokuapp.com/allapps")
+>>>>>>> Stashed changes
       .then((data) => data.json())
       .then((d) => {
         setApps(d);
