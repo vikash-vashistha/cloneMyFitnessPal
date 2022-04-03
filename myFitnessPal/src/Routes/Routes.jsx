@@ -16,14 +16,12 @@ import BeforeAbout from "../Components/BeforeAbout/BeforeAbout";
 // import { Detail } from "./components/signup/detailspage";
 // import { BodyCheckout } from "./components/signup/bodyscanpg";
 // import { WeightReduce } from "./components/signup/WeightReducepg";
-// import { AllApps } from "./components/allApps/AllApps";
 // import { Goals } from "./components/goals/Goals";
 // import { CreateAccount } from "./components/signup/createaccountpg";
 import { SignIn } from "../components/Header/SignIn";
 import { SignUp } from "../components/Header/SignUp";
 import { Profile } from "../components/Profile/Profile";
 import { useRef } from "react";
-
 import  {AllApps} from "../Components/allApps/AllApps"
 // import { CreateUsername } from "./components/signup/createusernamepg";
 
@@ -45,10 +43,10 @@ export const Routess = () => {
         <Route path="/profile" element={<Profile />}></Route>
         <Route path="/food" element={token.length == 0 ? <BeforeFood /> : <FoodDiary />}
         ></Route>
+        <Route path="/apps" element={<AllApps/>}></Route>
         <Route path="/food/:name" element={<BeforeFood />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
-        <Route path="/AllApps" element={<AllApps />}></Route>
-        <Route path="/Community" element={<Community />}></Route>
+        {/* <Route path="/Community" element={<Community />}></Route> */}
         <Route path="/premium" element={<Premium />}></Route>
       </Routes>
       <Footer />
