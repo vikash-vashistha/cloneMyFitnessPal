@@ -9,23 +9,18 @@ import { FoodDiary } from "../Components/Food/Food";
 import Blog from "../Components/Blog/Blog";
 import AfterHome from "../Components/AfterHome/AfterHome";
 import BeforeAbout from "../Components/BeforeAbout/BeforeAbout";
-// import { Payment } from "./components/Payment";
-// import { Welcome } from "./components/signup/welcome";
-// import { LooseWeight } from "./components/signup/weightgoal";
-// import { BaselineActivity } from "./components/signup/activitylevelpage";
-// import { Detail } from "./components/signup/detailspage";
-// import { BodyCheckout } from "./components/signup/bodyscanpg";
-// import { WeightReduce } from "./components/signup/WeightReducepg";
-// import { Goals } from "./components/goals/Goals";
-// import { CreateAccount } from "./components/signup/createaccountpg";
+
 import { SignIn } from "../components/Header/SignIn";
 import { SignUp } from "../components/Header/SignUp";
 import { Profile } from "../components/Profile/Profile";
 import { useRef } from "react";
+import { Community } from "../Components/Community/community";
+
 import  {AllApps} from "../Components/allApps/AllApps"
+import Notfound from "../Components/Notfound/Notfound";
 // import { CreateUsername } from "./components/signup/createusernamepg";
 
-// import { Premium } from "./components/premium/Premium";
+
 
 export const Routess = () => {
   const token = useRef();
@@ -46,8 +41,11 @@ export const Routess = () => {
         <Route path="/apps" element={<AllApps/>}></Route>
         <Route path="/food/:name" element={<BeforeFood />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
-        {/* <Route path="/Community" element={<Community />}></Route> */}
+        <Route path="/community" element={<Community />}></Route>
         <Route path="/premium" element={<Premium />}></Route>
+        <Route path="/about" element={<AfterHome />}></Route>
+        <Route path="/exercise" element={<BeforeAbout />}></Route>
+        <Route path="*" element={< Notfound/>}></Route>
       </Routes>
       <Footer />
     </div>

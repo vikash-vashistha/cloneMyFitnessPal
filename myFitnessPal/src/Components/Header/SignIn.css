@@ -7,6 +7,15 @@ body {
   margin: 0px;
   margin-top: 10px;
 }
+#email{
+  border: 2px solid #0066ee;
+  border-radius: 4px;
+ 
+
+}
+#email:focus{
+  border: 1px solid #0066ee;
+}
 
 .signIn {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
