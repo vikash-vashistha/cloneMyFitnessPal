@@ -5,8 +5,11 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { isToken, userData } from "../../store/actions";
 import { useParams, Navigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 
 function SignIn() {
+  const navigate = useNavigate();
+
   const { token, data } = useSelector((state) => ({
     token: state.token,
     data: state.data,
@@ -27,7 +30,7 @@ function SignIn() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:2345/login", formData)
+      .post("https://my-fitness-pal-backend.herokuapp.com/login", formData)
       .then((res) => {
         localStorage.setItem("token", JSON.stringify(res.data.token));
         // console.log(res);
@@ -36,8 +39,9 @@ function SignIn() {
         // console.log(res.data.user);
         dispatch(userData(res.data.user));
         console.log(data);
+
         if (token) {
-          return <Navigate to={"http://localhost:2345/register"} />;
+          navigate("/");
         }
       })
       .catch((e) => console.log(e));

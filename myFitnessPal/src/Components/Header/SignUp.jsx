@@ -4,10 +4,13 @@ import { useState } from "react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { isToken, userData } from "../../store/actions";
-import { useNavigate } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 
 localStorage.setItem("token", "");
 function SignUp() {
+  const navigate = useNavigate();
+
   const { token, data } = useSelector((state) => ({
     token: state.token,
     data: state.data,
@@ -32,20 +35,10 @@ function SignUp() {
     setFormData({ ...formData, [id]: value });
   };
 
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    checkUser();
-  }, []);
-
-  const checkUser = () => {
-    navigate("/");
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:2345/register", formData)
+      .post("https://my-fitness-pal-backend.herokuapp.com/register", formData)
       .then((res) => {
         console.log(res);
         localStorage.setItem("token", res.data.token);
@@ -54,6 +47,9 @@ function SignUp() {
         // console.log(res.data.user);
         dispatch(userData(res.data.user));
         // console.log(data);
+        if (token) {
+          navigate("/");
+        }
       })
       .catch((e) => console.log(e));
   };
@@ -72,6 +68,10 @@ function SignUp() {
   //     })
   //     .catch((e) => console.log(e));
   //  }
+
+  if (token !== null) {
+    return <Navigate to={"/"} />;
+  }
 
   return (
     <div className="signUp">
