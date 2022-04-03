@@ -62,7 +62,7 @@ function SignIn() {
           <input
             className="password input"
             id="password"
-            placeholder="Create a password"
+            placeholder="password"
             onChange={handleChange}
           />
           <br />

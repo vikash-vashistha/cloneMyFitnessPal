@@ -29,10 +29,10 @@ import { useRef } from "react";
 // import { Premium } from "./components/premium/Premium";
 
 export const Routess = () => {
-  const token = useRef();
-  useEffect(() => {
-    token.current = localStorage.getItem("token");  
-  }, []);
+  // const token = useRef();
+  // useEffect(() => {
+  //   token.current = localStorage.getItem("token");  
+  // }, []);
   
   return (
     <div>
@@ -42,20 +42,20 @@ export const Routess = () => {
         <Route path="/login" element={<SignIn />}></Route>
         <Route path="/register" element={<SignUp />}></Route>
         <Route path="/profile" element={<Profile />}></Route>
-        <Route
-          path="/food"
-          element={token.length == 0 ? <BeforeFood /> : <FoodDiary />}
-        ></Route>
         <Route path="/food/:name" element={<BeforeFood />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
-        <Route path="/AllApps" element={<AllApps />}></Route>
-        <Route path="/Community" element={<Community />}></Route>
         <Route path="/premium" element={<Premium />}></Route>
-      </Routes>
-      <Footer />
-    </div>
-  );
-};
+        </Routes>
+        <Footer />
+        </div>
+        );
+      };
+      // <Route path="/Community" element={<Community />}></Route>
+      // <Route path="/AllApps" element={<AllApps />}></Route>
+      // <Route
+      //   path="/food"
+      //   element={token.length == 0 ? <BeforeFood /> : <FoodDiary />}
+      // ></Route>
 // <Route path="/" element={<BeforeAbout />}></Route>
 // <Route
 //   path="/"

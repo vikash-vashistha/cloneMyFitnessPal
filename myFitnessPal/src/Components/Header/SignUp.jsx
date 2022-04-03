@@ -69,9 +69,9 @@ function SignUp() {
   //     .catch((e) => console.log(e));
   //  }
 
-  if (token !== null) {
-    return <Navigate to={"/"} />;
-  }
+  // if (token !== null) {
+  //   return <Navigate to={"/"} />;
+  // }
 
   return (
     <div className="signUp">
