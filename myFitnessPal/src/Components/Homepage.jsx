@@ -13,7 +13,7 @@ export const HomePage = () => {
   ];
 
   useEffect(() => {
-    setTimeout(
+    let id=setTimeout(
       () =>
         setIndex((prevIndex) =>
           prevIndex === image.length - 1 ? 0 : prevIndex + 1
@@ -21,7 +21,9 @@ export const HomePage = () => {
       6000
     );
 
-    return () => {};
+    return () => {
+      clearTimeout(id);
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index]);
 

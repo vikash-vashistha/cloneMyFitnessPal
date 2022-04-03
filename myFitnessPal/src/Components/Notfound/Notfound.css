@@ -1,0 +1,12 @@
+.nf-btn{
+    border: 0;
+    padding: 15px 25px;
+    background: #0066EE;
+    color: white;
+    font-weight: bolder;
+    border-radius: 4px;
+}
+.nf-img{
+    width: 90%;
+    height: 500px;
+}

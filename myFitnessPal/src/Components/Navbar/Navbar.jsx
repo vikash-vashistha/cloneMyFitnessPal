@@ -25,14 +25,14 @@ const { token, data } = useSelector((state) => ({
           </div>
         </div>
         <div id="navbar-lower">
-          <Link to="/">ABOUT</Link>
+          <Link to="/about">ABOUT</Link>
           <Link to="/food">FOOD</Link>
-          <Link to="/">EXERCISE</Link>
+          <Link to="/exercise">EXERCISE</Link>
           <Link to="/apps">APPS</Link>
-          <Link to="">COMMUNITY</Link>
+          <Link to="/community">COMMUNITY</Link>
           <Link to="/blog">BLOG</Link>
           <Link to="/premium">PREMIUM</Link>
-          <Link to="/goals">GOALS</Link>
+          
         </div>
       </div>
     );

@@ -53,14 +53,14 @@ function SignIn() {
         <h5 className="h5">Member Login</h5>
         <form className="myForm" onSubmit={handleSubmit}>
           <input
-            className="email"
+            className="email temp"
             id="email"
             placeholder="Email address"
             onChange={handleChange}
           />
           <br />
           <input
-            className="password input"
+            className="password input1"
             id="password"
             placeholder="password"
             onChange={handleChange}
@@ -68,7 +68,7 @@ function SignIn() {
           <br />
           <a className="label">Forgot password?</a>
           <br />
-          <input type="submit" value="LOG IN" className="btn input" />
+          <input type="submit" value="LOG IN" className="btn input1" />
         </form>
         <label className="label">or</label>
         <br />

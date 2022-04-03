@@ -9,7 +9,7 @@ export const AllApps = () => {
   const [filtApps, setFultApps] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/allapps")
+    fetch("https://my-fitness-pal-backend.herokuapp.com/allapps")
       .then((data) => data.json())
       .then((d) => {
         setApps(d);

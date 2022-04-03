@@ -2,10 +2,19 @@ body {
   background-color: #f0f2f4;
 }
 
-.input {
+.input1 {
   /* border: 1px solid black; */
   margin: 0px;
   margin-top: 10px;
+}
+#email{
+  border: 2px solid #0066ee;
+  border-radius: 4px;
+ 
+
+}
+#email:focus{
+  border: 1px solid #0066ee;
 }
 
 .signIn {
@@ -88,6 +97,8 @@ body {
   width: 90%;
   height: 45px;
 }
+
+
 
 @media only screen and (min-width: 376px) and (max-width: 769px) {
   .signIn {

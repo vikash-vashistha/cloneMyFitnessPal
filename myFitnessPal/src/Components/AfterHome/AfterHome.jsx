@@ -6,7 +6,7 @@ import OpacityIcon from '@mui/icons-material/Opacity';
 function AfterHome() {
   return (
     <div className='all_divs'>
-
+<br/><br/>
 <div className='addd_1'></div>
 <div className='addd_2'>
     <div className='left_bar'>
@@ -109,7 +109,7 @@ function AfterHome() {
         </div>
     </div>
 </div>
-
+<br/><br/>
     </div>
   )
 }
