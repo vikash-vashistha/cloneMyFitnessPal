@@ -64,7 +64,7 @@ function AfterHome() {
             </div>
             <div className='new_input'>
                 <textarea name="" id="" cols="60" rows="3"></textarea>
-                <button className='shear'>Shear</button>
+                <button className='shear'>Share</button>
             </div>
         </div>
         <div className='add_friends'>
